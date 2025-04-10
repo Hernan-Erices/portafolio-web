@@ -146,13 +146,18 @@ button {
     background-color: #218838;
 }
 
-/*diseno de la imagen de perfil*/
-
-.contenedor-sobre-mi {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+/*diseno de la imagen de perfil y sobre mi*/
+.sobre-mi {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
     margin-top: 20px;
+    padding-left: 20px;
+    justify-items: center; 
+    align-items: center;
+    max-width: 1100px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .img-perfil img {
@@ -160,6 +165,17 @@ button {
     height: 250px;  
     object-fit: cover;  
     border-radius: 50%;
+}
+
+.contenedor-sobre-mi {
+    background-color: #002063; 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1100px;
+}
+
+.p-sobre-mi p {
+    color: #ffffff;
 }
 
 /*diseno de la experiencia laboral linea de tiempo*/
@@ -222,16 +238,19 @@ button {
 .bento-container {
     background-color: #002063;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: 30px;
-    grid-auto-rows: minmax(250px, auto);
-    padding: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    max-width: 1100px;
+    border-radius: 8px;
 }
 
 .bento-item {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 1 1px 1px rgb(255, 255, 255);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,7 +260,7 @@ button {
 
 .bento-item h5 {
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #ffffff;
 }
 
@@ -255,6 +274,7 @@ button {
 .bento-item img:hover {
     transform: scale(1.1);
 }
+
 
 footer {
     max-width: 1200px;

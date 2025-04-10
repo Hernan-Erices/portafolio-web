@@ -12,18 +12,15 @@
 <body>
     <main>
         <section class="sobre-mi">
-            <div>
-                <h2>Sobre mí</h2>
-                <div class="contenedor-sobre-mi">
-                    <div class="img-perfil">
-                        <img src="assets/img/mi_foto.jpg" alt="Foto perfil">
-                    </div>
-                    <div class="p-sobre-mi">
-                        <p> Pasión por la creación de soluciones digitales escalables. Con experiencia en diseño, desarrollo y optimización de
-                            aplicaciones web, me enfoco en entregar proyectos robustos y de alto rendimiento. Siempre estoy aprendiendo nuevas
-                            tecnologías y buscando formas innovadoras de mejorar el proceso de desarrollo. Mi objetivo es crear experiencias
-                            digitales que sean funcionales, intuitivas y de impacto. </p>
-                    </div>
+            <div class="img-perfil">
+                <img src="assets/img/mi_foto.jpg" alt="Foto perfil">
+            </div>
+            <div class="contenedor-sobre-mi">
+                <div class="p-sobre-mi">
+                    <p>Pasión por la creación de soluciones digitales escalables. Con experiencia en diseño, desarrollo y optimización de
+                        aplicaciones web, me enfoco en entregar proyectos robustos y de alto rendimiento. Siempre estoy aprendiendo nuevas
+                        tecnologías y buscando formas innovadoras de mejorar el proceso de desarrollo. Mi objetivo es crear experiencias
+                        digitales que sean funcionales, intuitivas y de impacto.</p>
                 </div>
             </div>
         </section>
