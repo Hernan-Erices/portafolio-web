@@ -1,0 +1,263 @@
+body {
+    background-color: #041642;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #003e91;
+}
+
+main {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #003e91;
+}
+
+header {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    text-align: center;
+    background-color: #003e91;
+}
+
+/*barra de navegacion*/
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #003e91;
+    padding: 20px 0;
+    z-index: 1200;
+}
+
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #003e91;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*diseno de la cabecera, fuentes p, h1 hasta el h6*/
+.header h1 {
+    color: #ffffff;
+    font-size: 4.5em;
+    margin-bottom: 3px;
+}
+
+.header h3 {
+    color: #ffffff;
+    font-size: 2.0em;
+    margin-bottom: 1px;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.experiencia-laboral h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.proyectos h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.habilidades h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.p-sobre-mi {
+    flex: 1;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+/*disenos botones*/
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.btn-linkedin:hover {
+    background-color: #005c8a;
+}
+
+.btn-github {
+    background-color: #333;
+    color: white;
+}
+
+.btn-github:hover {
+    background-color: #555;
+}
+
+.btn-cv {
+    background-color: #28a745;
+    color: white;
+}
+.btn-cv:hover {
+    background-color: #218838;
+}
+
+/*diseno de la imagen de perfil*/
+
+.contenedor-sobre-mi {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.img-perfil img {
+    width: 250px;
+    height: 250px;  
+    object-fit: cover;  
+    border-radius: 50%;
+}
+
+/*diseno de la experiencia laboral linea de tiempo*/
+.experiencia-laboral {
+    padding: 40px 20px;
+    background-color: #003e91;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 3px solid #ffffff;
+    max-width: 1100px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #003e91;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #003e91;
+}
+
+.timeline-content {
+    background-color: #002063;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.timeline-content span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0 10px;
+}
+
+.timeline-content p {
+    margin: 0;
+    text-align: justify;
+}
+
+/*diseno de bentogrid en las habilidades*/
+.bento-container {
+    background-color: #002063;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    grid-auto-rows: minmax(250px, auto);
+    padding: 10px;
+}
+
+.bento-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 1px 1px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.bento-item h5 {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.bento-item img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.bento-item img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
